@@ -1,0 +1,80 @@
+1、该练习是对 java 加密技术的练习。
+2、JDK 提供比较基础的底层的实现，CC(commons-codec) 提供一些简化的操作，BC(Bouncy Castle)提供补充。
+3、testlib 包是根据加密算法分类，security 包下是根据加密类型分类。可根据使用场景选择练习的 Demo。
+4、加密类型分类：
+	1）Base64 编码算法。
+	2）消息摘要算法：1.MD5 2.SHA 3.MAC。
+	3）对称加密算法：1.DES、3DES 2.AES 3.PBE。
+	4）非对称加密算法：1.DH 2.RSA 3.ElGamal。
+	5）数字签名算法:1.RSA 2.DSA 3.ECDSA。
+5、包结构：
+   org
+	└─kwok
+	    ├─security
+	    │  ├─asymmetric_encryption
+	    │  │      DHTest.java
+	    │  │      ElGamalTest.java
+	    │  │      ElGamalTest2.java
+	    │  │      RSAConcurrencyTest.java
+	    │  │      RSATest.java
+	    │  │
+	    │  ├─base64
+	    │  │      Base64Test.java
+	    │  │
+	    │  ├─message_digest
+	    │  │      HMACTest.java
+	    │  │      MD5Test.java
+	    │  │      SHATest.java
+	    │  │
+	    │  ├─signature
+	    │  │      DSATest.java
+	    │  │      ECDSATest.java
+	    │  │      RSATest.java
+	    │  │
+	    │  └─symmetric_encryption
+	    │          AESTest.java
+	    │          DES3Test.java
+	    │          DESTest.java
+	    │          PBETest.java
+	    │
+	    └─testlib
+	        ├─AES
+	        │      Test_AES.java
+	        │
+	        ├─Base64
+	        │      Test_Base64.java
+	        │
+	        ├─DES
+	        │      Test_3DES.java
+	        │      Test_DES.java
+	        │
+	        ├─DH
+	        │      Test_DH.java
+	        │
+	        ├─DSA
+	        │      Test_DSA.java
+	        │
+	        ├─ECDSA
+	        │      Test_ECDSA.java
+	        │
+	        ├─HMAC
+	        │      Test_HMAC.java
+	        │
+	        ├─MD
+	        │      Test_MD.java
+	        │
+	        ├─PBE
+	        │      Test_PBE.java
+	        │
+	        ├─RSA
+	        │      Test_RSA.java
+	        │      Test_RSA2.java
+	        │
+	        └─SHA
+	                Test_SHA.java
+6、鸣谢：
+原著：
+https://github.com/Tim9Liu9/java_security
+https://github.com/zhanganyuan/JavaSecurity
+
+
